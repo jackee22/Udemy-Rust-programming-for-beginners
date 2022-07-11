@@ -11,20 +11,19 @@
 //   name to print
 
 enum Color {
-  Yellow,
-  White,
   Black,
+  Green,
+  White,
 }
 
-fn print_color(my_color: Color) {
+fn color_print(my_color: Color) {
   match my_color {
-    Color::Yellow => println!("Yellow"),
-    Color::White => println!("White"),
-    Color::Black => println!("Black"),
-    _ => println!("Nothing")
+    Color::Black => println!("B"),
+    Color::Green => println!("G"),
+    Color::White => println!("W"),
   }
 }
 
 fn main() {
-  print_color(Color::Black);
+  color_print(Color::Black)
 }
